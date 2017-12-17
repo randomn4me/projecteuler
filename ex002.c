@@ -3,10 +3,10 @@
 int 
 main(int argc, char **argv)
 {
-    int x, tmp;
+    int x = 0, tmp;
     int y = 1;
 
-    float sum;
+    float sum = 0;
 
     while (y < 4000000) {
         if (y % 2 == 0) sum += y;

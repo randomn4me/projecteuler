@@ -19,7 +19,7 @@ main(int argc, char **argv)
 			break;
 		}
 	}
-	printf("%li\n", i);
+	printf("%d\n", i);
 
 	return 0;
 }

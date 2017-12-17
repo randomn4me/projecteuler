@@ -8,13 +8,8 @@ void usage(char *name) {
 }
 
 int main(int argc, char **argv) {
-	int i, sum, max;
-
-	if (argc != 2) {
-		usage(argv[0]);
-	}
-
-	max = strtol(argv[1], (char **)NULL, 10);
+	int i = 0, sum = 0;
+	int max = 1000;
 
 	while (i < max) {
 		if (i % 3 == 0 || i % 5 == 0) {
