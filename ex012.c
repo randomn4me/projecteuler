@@ -3,25 +3,22 @@
 int
 main(int argc, char **argv)
 {
-	int triangle_num = 0;
-	int index = 1;
-
+	int trinum = 0;
 	int factors = 0;
 
-	while (factors < 500) {
-		triangle_num += index++;
+	for (int index = 1; factors < 500; trinum += index++) {
+		int candidate;
 
-		int candidate = 1;
-		factors = 0;
-		while (candidate * candidate <= triangle_num) {
-			if (triangle_num % candidate == 0) {
+		for (factors = 0, candidate = 1;
+				candidate * candidate <= trinum;
+				++candidate) {
+			if (trinum % candidate == 0) {
 				factors += 2;
 			}
-			++candidate;
 		}
 	}
 
-	printf("%d\n", triangle_num);
+	printf("%d\n", trinum);
 	return 0;
 }
 
