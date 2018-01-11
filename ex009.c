@@ -17,7 +17,6 @@ main (int argc, char **argv)
 			for (int k = j + 1; k < 1000; ++k)
 				if (is_triple(i,j,k)) {
 					num = i*j*k;
-					printf("%d %d %d\n", i, j, k);
 				}
 	printf("%d\n", num);
 	return 0;
